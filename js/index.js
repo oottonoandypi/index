@@ -1,3 +1,4 @@
+// a function for generating strings with repeated words and random selection of fonts.
 let repeatedStringGenerator_withFonts=function(str, fontSelections, parent_canvas, ele, fake_canvas){
     let parent_ele=parent_canvas.querySelector(ele);
     let selection = Math.floor(Math.random() * fontSelections.length);
@@ -12,9 +13,8 @@ let repeatedStringGenerator_withFonts=function(str, fontSelections, parent_canva
             console.log("h1 offsetheight: "+parent_ele.offsetHeight); */
             parent_ele.innerHTML+="<em>"+ str+"</em>";
             parent_ele.querySelectorAll("em")[parent_ele.querySelectorAll("em").length-1].style.fontFamily=fontSelections[selection];
-            length--;
             selection = Math.floor(Math.random() * fontSelections.length);
-            console.log(selection);
+            // console.log(selection);
             textMeasurement = fake_canvas.getContext('2d').measureText(parent_ele.innerText);
             // console.log(parent_ele.innerText);
         }
@@ -41,9 +41,12 @@ const fontSelections = ["Caveat, cursive",
 const backgroundStr = " Under Construction.. Stay Toned!!";
 const background_canvas = document.querySelector("#background_canvas");
 const fake_canvas = document.querySelector("canvas");
-repeatedStringGenerator_withFonts(backgroundStr, fontSelections, background_canvas, "h1", fake_canvas);
-setInterval(function() {
+
+window.onload=function(){
     repeatedStringGenerator_withFonts(backgroundStr, fontSelections, background_canvas, "h1", fake_canvas);
-  }, 1000);
-// console.log(document.querySelector("#background_canvas").innerHTML);
+    setInterval(function() {
+        repeatedStringGenerator_withFonts(backgroundStr, fontSelections, background_canvas, "h1", fake_canvas);
+    }, 1000);
+}
+
 
