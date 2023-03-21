@@ -4,6 +4,10 @@ body{
     /* font-family: ; */
 }
 
+h1{
+    margin: 0;
+}
+
 canvas{
     position: absolute;
     height: 0;
@@ -17,8 +21,7 @@ canvas{
 }
 
 #background_canvas h1{
-    margin-top: 0;
-    color: rgb(168, 248, 224);
+    color: rgb(239, 252, 248);
 }
 
 #content_canvas{
@@ -29,21 +32,70 @@ canvas{
     height: 100%;
 }
 
-section{
+/*section{
     border-style: dashed;
-}
+}*/
 
 #window_canvas{
     margin: 20vh auto auto auto;
-    width: 600px;
-    height: 400px;
-    background-color: bisque;
+    height: 500px;
+    width: 100%;
+}
+
+#window_title h1 em{
+    font-size: medium;
+}
+#window_title{
+    background-color: aliceblue;
+    height: 20%;
+    padding: 5px;
+}
+#window_content{
+    width: 100%;
+    height:80%;
+    background-color: white;
+    border-style: solid;
+    border-color: green;
+    padding:0 1px;
+}
+
+#window_nav_canvas{
+    position: relative;
+    height: 10%;
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, rgb(252, 251, 197, 0.7) 30%, rgb(254, 202, 210, 0.7), rgb(216, 180, 251, 0.7), rgb(170, 192, 243, 0.7));
+}
+
+#nav{
+    position: absolute;
+    width: 15%;
+    height: 50%;
+    left:5px;
+    top: 45%;
+    transform: translateY(-50%); 
+}
+#nav img{
+    display: block;
+    float: left;
+    margin: 1px;
+    width:15px;
+}
+
+#window_content_canvas{
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    height: 90%;
+    overflow-y:scroll;
 }
 
 #footer_canvas{
     position: fixed;
     bottom: 0;
-    height: 50px;
+    height: 70px;
     width: 100%;
     text-align: center;
     border-bottom-color: orange;
@@ -52,6 +104,9 @@ section{
 }
 
 #footer_canvas p{
-    transform: translate(0, -70%);
-    margin-top: 20px;
+    transform: translate(0, -50%);
+    margin-top: 40px;
+    text-align: right;
+    margin-right: 20px;
+    color: rgb(1, 86, 1);
 }
