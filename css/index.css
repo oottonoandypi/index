@@ -32,6 +32,10 @@ section{
     padding: 10px 0;
 }
 
+a{
+    cursor: pointer;
+}
+
 #background_canvas{
     position: relative;
     width: 100vw;
@@ -157,22 +161,23 @@ section{
 
 #window_content_canvas strong::after {
     /* Highlight color */
-    background-color: #9eedf9;
+    background-color: #c3f2f9;
 
     content: "";
     position: absolute;
     width: calc(100% + 4px);
     height: 70%;
-    top: 4px;
     left: -2px;
     bottom: 0;
     z-index: -2;
     transform: rotate(-5.5deg);
+    top: 4px;
 }
 
 #window_content_canvas button:disabled strong::after{
     transform: rotate(-1.5deg);
     top: 10px;
+    background-color: #9eedf9;
 }
 
 #window_content_headline{
@@ -246,8 +251,4 @@ section{
 
 .float-right{
     float: right;
-}
-
-a{
-    cursor: pointer;
 }
