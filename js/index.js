@@ -1,3 +1,15 @@
+const fontSelections = ["Caveat, cursive", 
+    "Gloria Hallelujah, cursive",
+    "Indie Flower, cursive",
+    "Nanum Pen Script, cursive",
+    "Pacifico, cursive",
+    "Rubik Iso, cursive",
+    "Shadows Into Light"
+];
+const backgroundStr = " Under Construction.. Stay Toned!!";
+const background_canvas = document.querySelector("#background_canvas");
+const fake_canvas = document.querySelector("canvas");
+
 // a function for generating strings with repeated words and random selection of fonts.
 let repeatedStringGenerator_withFonts=function(str, fontSelections, parent_canvas, ele, fake_canvas){
     let parent_ele=parent_canvas.querySelector(ele);
@@ -30,23 +42,23 @@ let repeatedStringGenerator_withFonts=function(str, fontSelections, parent_canva
     // return output;
 }
 
-const fontSelections = ["Caveat, cursive", 
-    "Gloria Hallelujah, cursive",
-    "Indie Flower, cursive",
-    "Nanum Pen Script, cursive",
-    "Pacifico, cursive",
-    "Rubik Iso, cursive",
-    "Shadows Into Light"
-];
-const backgroundStr = " Under Construction.. Stay Toned!!";
-const background_canvas = document.querySelector("#background_canvas");
-const fake_canvas = document.querySelector("canvas");
+document.getElementById("background_canvas").onload=repeatedStringGenerator_withFonts(backgroundStr, fontSelections, background_canvas, "h1", fake_canvas);
 
-window.onload=function(){
+let bk_interval = setInterval(function() {
     repeatedStringGenerator_withFonts(backgroundStr, fontSelections, background_canvas, "h1", fake_canvas);
-    setInterval(function() {
+}, 1000);
+
+/* let setbk = function(){
+    bk_interval = setInterval(function() {
         repeatedStringGenerator_withFonts(backgroundStr, fontSelections, background_canvas, "h1", fake_canvas);
     }, 1000);
 }
+
+let freezebk = function(){
+    clearInterval(bk_interval);
+} */
+
+
+
 
 

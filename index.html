@@ -10,7 +10,6 @@
     <canvas></canvas>
     <div id="background_canvas">
         <h1></h1>
-        
     </div>
 
     <div id="content_canvas">
@@ -27,7 +26,40 @@
                         </div>
                     </div>
                     <div id="window_content_canvas">
-
+                        <div id="window_content_header">
+                            <div class="col-1 col-sm-2 col-md-1 col-lg-2 col-xl-3"></div>
+                            <div id="window_content_header_nav" class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-6">
+                                <button onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'TOP')" class="col-md-2 col-lg-2 nav_button" disabled>TOP</button>
+                                <button onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'PORTFOLIO')" class="col-md-2 col-lg-3 nav_button">PORTFOLIO</button>
+                                <button onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'BEHIND OOTTONOANDYPI')" class="col-md-8 col-lg-7 nav_button">BEHIND OOTTONOANDYPI</button>
+                            </div>
+                            <div class="col-1 col-sm-2 col-md-1 col-lg-2 col-xl-3"></div>
+                        </div>
+                        <div id="window_content_headline">
+                            <h1 style="color: rgb(245, 230, 252); font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em style="color: #bdfcfb;">C</em>ot&nbsp;t&nbsp;on<em style="color: #bdfcfb;">C</em>an&nbsp;dy&nbsp;P&nbsp;i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                            <h1 style="color: #fdaedd; font-weight: 350; font-size: 220%;" class="position-absolute">&nbsp;&nbsp;<em style="font-style: normal; color:#7ca7f2;">o</em>&nbsp;o&nbsp;t&nbsp;t&nbsp;o&nbsp;n&nbsp;<em style="font-style: normal; color:#7ca7f2;">o</em>&nbsp;a&nbsp;n&nbsp;d&nbsp;y&nbsp;p&nbsp;i&nbsp;</h1>
+                        </div>
+                        <div id="window_content_body">
+                            <section id="window_content_body_portfolio">
+                                <h4 class="window-content-title">PORTFOLIO</h4>
+                                <div class="col-12 col-md-6">
+                                    <img>
+                                    <a class="text-align-center">javachips</a>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img>
+                                    <p class="text-align-center">Web projects</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a>javachips</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -35,9 +67,11 @@
         <div class="col-lg-3 col-md-2 col-sm"></div>
     </div>
     <section id="footer_canvas">
-        <p>© 2023 oottonoandypi -- Last Updated on March 16th, 2023</p>
+        <p class="float-left">© 2023 oottonoandypi</p>
+        <p class="float-right">Last Updated on March 16th, 2023</p>
     </section>
     <script src="js/index.js"></script>
+    <script src="js/window.js"></script>
 </body>
 
 <!-- <h1 style="font-family: 'Caveat', cursive;">Under Construction..</h1>
