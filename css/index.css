@@ -2,12 +2,29 @@ body{
     background-color: orange;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, p{
     margin: 0;
 }
 
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:lightgray;
+    height: 1px;
+}
+
 canvas{
     position: absolute;
+}
+
+section{
+    padding: 5px 0 20px 0;
 }
 
 #background_canvas{
@@ -93,32 +110,40 @@ canvas{
 }
 
 #window_content_header{
-    color: rgb(42, 23, 162);
     background-color: rgb(248, 240, 223);
     width:100%;
     height: 45px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0;
     /* position: absolute; */
 }
 
 #window_content_header_nav{
     transform: translate(0, -50%);
-    margin-top: 20px;
+    top: 50%;
+    margin: 0 auto;
     height: 50%;
 }
 
 #window_content_header_nav button{
-    float: left;
     height: 100%;
     text-align: center;
     border: none;
     background-color: transparent;
     font-weight: 450;
+    color: rgb(42, 23, 162);
+    text-decoration: none;
+    font-weight: medium;
 }
 
 #window_content_header_nav button:disabled{
     color: rgb(176, 137, 53);
     text-decoration: underline wavy;
     font-weight: bold;
+    cursor:default;
 }
 
 #window_content_header_nav strong {
@@ -141,15 +166,32 @@ canvas{
 }
 #window_content_headline{
     background-color: yellow;
-    height: 100px;
+    height: 50%;
     width: 100%;
+    position: relative;
+
 }
 #window_content_headline h1{
     text-align: center;
-    margin: 25px auto;
+    top: 40%;
     position: absolute;
     width: 100%;
     display: block;
+}
+
+.icon-container{
+    width: 96px;
+    height: 96px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.icon-container img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translate(0, -50%);
 }
 
 .text-align-center {
@@ -158,7 +200,15 @@ canvas{
 
 .window-content-title{
     text-align: center;
-    margin: 20px auto;
+    margin-bottom: 10px;
+    color: rgb(42, 23, 162);
+    background-color: rgb(248, 240, 223);
+}
+
+#window_content_body_about img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 #footer_canvas{
@@ -186,4 +236,8 @@ canvas{
 
 .float-right{
     float: right;
+}
+
+a{
+    cursor: pointer;
 }

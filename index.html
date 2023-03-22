@@ -20,46 +20,46 @@
                 <div id="window_content">
                     <div id="window_nav_canvas">
                         <div id="nav">
-                            <img src="img/close.png">
-                            <img src="img/minimize.png">
-                            <img src="img/maximize.png">
+                            <img src="img/close.png" alt="close.png">
+                            <img src="img/minimize.png" alt="minimiza.png">
+                            <img src="img/maximize.png" alt="maximize.png">
                         </div>
                     </div>
                     <div id="window_content_canvas">
-                        <div id="window_content_header">
+                        <section id="window_content_header">
                             <div class="col-1 col-sm-2 col-md-1 col-lg-2 col-xl-3"></div>
                             <div id="window_content_header_nav" class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-6">
-                                <button onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'TOP')" class="col-md-2 col-lg-2 nav_button" disabled>TOP</button>
-                                <button onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'PORTFOLIO')" class="col-md-2 col-lg-3 nav_button">PORTFOLIO</button>
-                                <button onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'BEHIND OOTTONOANDYPI')" class="col-md-8 col-lg-7 nav_button">BEHIND OOTTONOANDYPI</button>
+                                <a href="#window_content_canvas"><button id="window_content_header_nav_top" onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'TOP')" class="col-md-2 col-lg-2" disabled>TOP</button></a>
+                                <a href="#portfolio_section"><button id="window_content_header_nav_portfolio" onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'PORTFOLIO')" class="col-md-2 col-lg-3">PORTFOLIO</button></a>
+                                <a href="#about_section"><button id="window_content_header_nav_about" onmouseover="addStrong(this)" onmouseout="removeStrong(this, 'BEHIND OOTTONOANDYPI')" class="col-md-8 col-lg-7">BEHIND OOTTONOANDYPI</button></a>
                             </div>
                             <div class="col-1 col-sm-2 col-md-1 col-lg-2 col-xl-3"></div>
-                        </div>
-                        <div id="window_content_headline">
+                        </section>
+                        <section id="window_content_headline">
                             <h1 style="color: rgb(245, 230, 252); font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em style="color: #bdfcfb;">C</em>ot&nbsp;t&nbsp;on<em style="color: #bdfcfb;">C</em>an&nbsp;dy&nbsp;P&nbsp;i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                             <h1 style="color: #fdaedd; font-weight: 350; font-size: 220%;" class="position-absolute">&nbsp;&nbsp;<em style="font-style: normal; color:#7ca7f2;">o</em>&nbsp;o&nbsp;t&nbsp;t&nbsp;o&nbsp;n&nbsp;<em style="font-style: normal; color:#7ca7f2;">o</em>&nbsp;a&nbsp;n&nbsp;d&nbsp;y&nbsp;p&nbsp;i&nbsp;</h1>
-                        </div>
-                        <div id="window_content_body">
+                        </section>
+                        <hr id="portfolio_section">
+                        <section id="window_content_body">
                             <section id="window_content_body_portfolio">
-                                <h4 class="window-content-title">PORTFOLIO</h4>
-                                <div class="col-12 col-md-6">
-                                    <img>
-                                    <a class="text-align-center">javachips</a>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <img>
-                                    <p class="text-align-center">Web projects</p>
+                                <section class="col-12 col-md-6">
+                                    <div class="icon-container"><img src="img/cookie.png" alt="cookie.png"></div>
+                                    <a href="https://github.com/oottonoandypi/javachips" target=”_blank”  class="text-align-center"><h5>javachips</h5></a>
+                                </section>
+                                <section class="col-12 col-md-6">
+                                    <div class="icon-container"><img src="img/donut.png" alt="donut.png"></div>
+                                    <a class="text-align-center"><h5>dough-com</h5></a>
                                     <ul>
-                                        <li>
-                                            <div>
-                                                <a>javachips</a>
-                                            </div>
-                                        </li>
+                                        <li><a href="" target=”_blank”>dicegame</a></li>
+                                        <li><a href="" target=”_blank”>oottonoandypi</a></li>
                                     </ul>
-                                    
-                                </div>
+                                </section>
                             </section>
-                        </div>
+                            <hr id="about_section">
+                            <section id="window_content_body_about">
+                                <img src="img/resume2023.png" alt="resume2023.png">
+                            </section>
+                        </section>
                     </div>
                 </div>
             </section>
