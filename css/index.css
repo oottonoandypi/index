@@ -20,11 +20,12 @@ hr {
 }
 
 canvas{
-    position: absolute;
+    position: fixed;
+    z-index: -1;
 }
 
 section{
-    padding: 5px 0 20px 0;
+    padding: 20px 0;
 }
 
 #background_canvas{
@@ -166,7 +167,7 @@ section{
 }
 #window_content_headline{
     background-color: yellow;
-    height: 50%;
+    height: 70%;
     width: 100%;
     position: relative;
 
@@ -224,7 +225,7 @@ section{
 
 #footer_canvas p{
     transform: translate(0, -50%);
-    margin: 15px 20px;
+    margin: 0 20px;
     text-align: right;
     right: 20px;
     color: rgb(1, 86, 1);
