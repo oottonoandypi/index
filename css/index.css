@@ -19,13 +19,17 @@ hr {
     height: 1px;
 }
 
+ul{
+    padding: 0 20%;
+}
+
 canvas{
     position: fixed;
     z-index: -1;
 }
 
 section{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 #background_canvas{
@@ -129,7 +133,7 @@ section{
     height: 50%;
 }
 
-#window_content_header_nav button{
+#window_content_canvas button{
     height: 100%;
     text-align: center;
     border: none;
@@ -140,18 +144,18 @@ section{
     font-weight: medium;
 }
 
-#window_content_header_nav button:disabled{
-    color: rgb(176, 137, 53);
-    text-decoration: underline wavy;
-    font-weight: bold;
+#window_content_canvas button:disabled{
+    /* color: rgb(176, 137, 53);
+    text-decoration: underline wavy; */
     cursor:default;
+    margin-top: -3px;
 }
-
-#window_content_header_nav strong {
+#window_content_canvas strong {
     position: relative;
+    z-index: -1;
 }
 
-#window_content_header_nav strong::before {
+#window_content_canvas strong::after {
     /* Highlight color */
     background-color: #9eedf9;
 
@@ -159,18 +163,23 @@ section{
     position: absolute;
     width: calc(100% + 4px);
     height: 70%;
-    top: 8px;
+    top: 4px;
     left: -2px;
     bottom: 0;
-    z-index: -1;
-    transform: rotate(-1.5deg);
+    z-index: -2;
+    transform: rotate(-5.5deg);
 }
+
+#window_content_canvas button:disabled strong::after{
+    transform: rotate(-1.5deg);
+    top: 10px;
+}
+
 #window_content_headline{
     background-color: yellow;
-    height: 70%;
+    height: 85%;
     width: 100%;
     position: relative;
-
 }
 #window_content_headline h1{
     text-align: center;
@@ -206,7 +215,7 @@ section{
     background-color: rgb(248, 240, 223);
 }
 
-#window_content_body_about img{
+#window_content_body_me img{
     width: 80%;
     margin: 0 auto;
     display: block;
@@ -225,7 +234,7 @@ section{
 
 #footer_canvas p{
     transform: translate(0, -50%);
-    margin: 0 20px;
+    margin: 5px 20px;
     text-align: right;
     right: 20px;
     color: rgb(1, 86, 1);
